@@ -179,7 +179,7 @@ body {
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transform: translateY(0); /* Start off-screen */
+  transform: translateY(0);
 }
 .header__wrapper {
   display: flex;
@@ -275,7 +275,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 10000;
-  transform: translateY(-100%); /* Slide in from the top */
+  transform: translateY(-100%);
   animation: slideDown 0.3s ease-in-out forwards;
 }
 
@@ -665,13 +665,27 @@ body {
 .booking__email {
   font-size: 1.5rem;
   color: var(--light);
+  transition: all 0.4s ease;
 }
 .booking__email:hover {
   color: var(--main-red);
+  text-decoration: underline;
+}
+.booking__email:active, .booking__email:focus {
+  color: var(--accent);
   text-decoration: underline;
 }
 
 .bottom-section__img {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 1920px) {
+  .concerts__bg-block {
+    height: 150vh;
+  }
+  .concerts__photo {
+    height: 150vh;
+  }
 }/*# sourceMappingURL=styles.css.map */
