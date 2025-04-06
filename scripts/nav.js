@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 300) {
         header.classList.add('fixed');
         document.body.style.paddingTop = `${header.offsetHeight}px`;
     } else {
